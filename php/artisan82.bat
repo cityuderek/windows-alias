@@ -1,0 +1,1 @@
+php82 artisan %*

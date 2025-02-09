@@ -1,0 +1,1 @@
+docker exec -it %1 cat %2

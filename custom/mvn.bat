@@ -1,0 +1,1 @@
+"D:\software\other\apache-maven-3.3.9\bin\mvn" %*
