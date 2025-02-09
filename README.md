@@ -59,13 +59,22 @@ Enter path like "D:\wwwroot\windows-alias\aws" ...
 
 ## Docker
 
-| Command | Description              | Alias of                            |
-| ------- | ------------------------ | ----------------------------------- |
-| dcu     |                          | docker-compose up                   |
-| dcd     |                          | docker-compose down                 |
-| dkrsh   | exec sh of a container   | docker exec -it \<container_id\> sh |
-| dkrll   | list file in a container | docker exec -it %1 ls -l %2         |
-| dkrcat  | cat file in a container  | docker exec -it %1 cat %2           |
+| Command   | Description                                              | Alias of                                                |
+| --------- | -------------------------------------------------------- | ------------------------------------------------------- |
+| dkr       |                                                          | docker                                                  |
+| dkc       |                                                          | docker-compose                                          |
+| dcu       |                                                          | docker-compose up                                       |
+| dcd       |                                                          | docker-compose down                                     |
+| dkrsh     | exec sh of a container                                   | docker exec -it \<container_id\> sh                     |
+| dkrll     | list file in a container                                 | docker exec -it %1 ls -l %2                             |
+| dkrcat    | cat file in a container                                  | docker exec -it %1 cat %2                               |
+| dkrubuntu | run ubuntu container and map volume to current directory | docker run -it --rm -v .:/root/f -w /root/f ubuntu bash |
+
+- dkrubuntu
+
+Simply switch to ubuntu with same directory, so that you can you linux command easily.
+Container will be removed after quit.
+Default ubunbu working directory is /root/f
 
 - dkrsh example
 

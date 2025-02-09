@@ -1,0 +1,1 @@
+docker run -it --rm -v .:/root/f -w /root/f ubuntu bash
